@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+  background-color: #010215;
+  color: #FFF;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .pagination-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 12px;
+
+    button {
+      border-radius: 4px;
+      padding: 4px 16px;
+      background-color: rgb(82, 0, 247);
+      color: white;
+      border: none;
+      font-size: 14px;
+
+    }
+  }
+
+  .table>:not(caption)>*>* {
+    background-color: transparent;
+    color: #FFF;
+    border: none;
+  }
+
+  .table {
+
+    thead {
+      background-color: rgb(81, 0, 247);
+      color: white;
+
+      th {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        font-weight: 600;
+      }
+
+      .actions-th {
+        width: 200px;
+      }
+    }
+
+    tbody {
+      tr {
+        transition: background-color 0.2s ease;
+
+        &:hover {
+          background-color: rgba(152, 100, 255, 0.096);
+        }
+
+        td {
+          vertical-align: middle;
+          font-size: 14px;
+          border-bottom: 1px solid #ffffff13;
+
+        }
+
+        .btn {
+          border-radius: 4px;
+          padding: 2px 16px;
+          font-size: 13px;
+        }
+      }
+
+      .no-data {
+        text-align: center;
+        color: #999;
+        font-style: italic;
+      }
+    }
+  }
+
+
+
+}
+
+.modal {
+  .modal-content {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+
+    .modal-header {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.089);
+
+      .modal-title {
+        font-weight: 600;
+        color: #fff;
+      }
+
+      .btn-close {
+        filter: invert(1);
+      }
+    }
+
+    .modal-body {
+      color: #e0e0e0;
+
+      .form-control {
+        background: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 12px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        color: #fff;
+      }
+    }
+
+    .modal-footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.089);
+
+      .btn-secondary {
+        background: rgba(0, 0, 0, 0.377);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        font-size: 14px;
+      }
+            .btn-primary {
+         background-color: rgb(81, 0, 247);
+border-color:rgb(81, 0, 247) ;
+        font-size: 14px;
+      }
+    }
+  }
+}
